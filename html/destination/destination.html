@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/nav.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/nav.js"></script>
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -14,7 +14,7 @@
 <body>
 
   <header class="flex--row">
-    <img class="logo" src="./assets/shared/logo.svg" alt="logo" >
+    <img class="logo" src="../../assets/shared/logo.svg" alt="logo" >
     <div class="line"></div>
     <nav class="nav main-navbar">
       <ul class="nav__list">
@@ -25,5 +25,116 @@
       </ul>
     </nav>
   </header>
+
+  <main class="destination">
+    <div class="container">
+        <h2 class="destination__title"><span class="destination__title--number">01</span>Pick your destination</h2>
+        <div class="grid__destination"></div>
+
+        <ul class="destination__tabs-list">
+            <li class="active destination__tab" data-tab-target="#moon">Moon</li>
+            <li class="tab destination__tab" data-tab-target="#mars">Mars</li>
+            <li class="tab destination__tab" data-tab-target="#europa">Europa</li>
+            <li class="tab destination__tab" data-tab-target="#titan">Titan</li>
+        </ul>
+        
+        <div class="tab-content destination__img">
+
+            <div id="moon" data-tab-content class="active">
+              <img src="../../assets/destination/image-europa.png" alt="a picture of the moon">
+            </div>
+
+            <div id="mars" data-tab-content>
+              <img src="../../assets/destination/image-mars.png" alt="a picture of mars">
+            </div>
+
+            <div id="europa" data-tab-content>
+              <img src="../../assets/destination/image-europa.png" alt="a picture of the planet europa">
+            </div>
+
+            <div id="titan" data-tab-content>
+              <img src="../../assets/destination/image-titan.png" alt="a picture of the planet titan">
+            </div>
+
+        </div>
+
+          <div class="tab-content destination__info">
+
+            <section class="active" id="moon" data-tab-content>
+                <h3 class="planet-title">Moon</h3>
+                <p class="planet-info">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+                    regain perspective and come back refreshed. While you’re there, take in some history 
+                    by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                <hr>
+                <div class="flex--row">
+                    <div class="flex--col">
+                        <h6 class="travel-info__title">Avg. distance</h6>
+                        <p class="dist-info__text">384,400 km</p>
+                    </div>
+                    <div class="flex--col">
+                            <h6 class="travel-info__title">Est. travel time</h6>
+                            <p class="dist-info__text">3 days</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mars" data-tab-content>
+                <h3 class="planet-title">Mars</h3>
+                <p class="planet-info">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+                    the tallest planetary mountain in our solar system. It’s two and a half times 
+                    the size of Everest!</p>
+                <hr>
+                <div class="flex--row">
+                    <div class="flex--col">
+                        <h6 class="travel-info__title">Avg. distance</h6>
+                        <p class="dist-info__text">225 mil. km</p>
+                    </div>
+                    <div class="flex--col">
+                            <h6 class="travel-info__title">Est. travel time</h6>
+                            <p class="dist-info__text">9 months</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="europa" data-tab-content>
+                <h3 class="planet-title">Europa</h3>
+                <p class="planet-info">The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+                    winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+                    ice skating, curling, hockey, or simple relaxation in your snug 
+                    wintery cabin.</p>
+                <hr>
+                <div class="flex--row">
+                    <div class="flex--col">
+                        <h6 class="travel-info__title">Avg. distance</h6>
+                        <p class="dist-info__text">628 mil. km</p>
+                    </div>
+                    <div class="flex--col">
+                            <h6 class="travel-info__title">Est. travel time</h6>
+                            <p class="dist-info__text">3 years</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="titan" data-tab-content>
+                <h3 class="planet-title">Titan</h3>
+                <p class="planet-info">The only moon known to have a dense atmosphere other than Earth, Titan 
+                    is a home away from home (just a few hundred degrees colder!). As a 
+                    bonus, you get striking views of the Rings of Saturn.</p>
+                <hr>
+                <div class="flex--row">
+                    <div class="flex--col">
+                        <h6 class="travel-info__title">Avg. distance</h6>
+                        <p class="dist-info__text">1.6 bil. km</p>
+                    </div>
+                    <div class="flex--col">
+                            <h6 class="travel-info__title">Est. travel time</h6>
+                            <p class="dist-info__text">7 years</p>
+                    </div>
+                </div>
+              </section>
+          </div>
+
+    </div>
+  </main>
 
 </body>

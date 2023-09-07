@@ -63,6 +63,10 @@ ul {
   --white: hsl(0, 0%, 100%);
 }
 
+.grid {
+  display: grid;
+}
+
 :root {
   --ff-accent-text: "Bellefair", serif;
   --ff-simple-text: "Barlow Condensed", sans-serif;
