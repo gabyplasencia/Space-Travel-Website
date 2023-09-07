@@ -16,6 +16,8 @@ p,
 figure,
 picture {
     margin: 0;
+    font-weight: 400;
+    font-size: medium;
 }
 
 body {
@@ -26,7 +28,6 @@ img,
 picture {
     max-width: 100%;
     display: block;
-    object-fit: contain;
 }
 
 input,
@@ -38,6 +39,7 @@ select {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
