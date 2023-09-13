@@ -1,0 +1,66 @@
+
+header {
+    padding: 3rem 2rem;
+    padding-right: 0;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 3rem;
+}
+
+.line {
+    width: 37%;
+    height: 2px;
+    background-color: hsl(0 0% 90% / 0.1);
+    z-index: 2;
+}
+
+.main-navbar {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 5rem;
+    width: max(35vw, 60vw);
+    padding: 0 6rem;
+    background-color: hsl(0 0% 90% / 0.05);
+  /* probar en visual ----- mientrs mas grande el valor mas blurea   */
+    backdrop-filter: blur(0.5rem);
+    z-index: 1;
+}
+
+.nav__list {
+    display: flex;
+    height: 100%;
+    gap: 2rem;
+}
+
+.nav__item {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+$underline-thick: 3px;
+
+.nav__item:hover {
+    border-bottom: $underline-thick solid var(--lila);
+}
+
+.nav__item:hover a{
+  /*   tiene que ser la mitad del border */
+    transform: translateY(1px);
+}
+
+.nav__item:active {
+    border-bottom: $underline-thick solid var(--white);
+}
+
+.nav__item.current-page {
+    border-bottom: $underline-thick solid var(--white);
+}
+
+.nav__item.current-page a{
+    transform: translateY(1px);
+}
+
