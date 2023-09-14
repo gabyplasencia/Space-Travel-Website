@@ -1,6 +1,14 @@
+@use "./sass-variables" as v;
+
 @mixin media ($width) {
-    @media (min-width: $width) {
-        @content;
+    @if $width != v.$mobile {
+        @media (min-width: $width) {
+            @content;
+        }
+    } @else {
+        @media (max-width: $width) {
+            @content;
+        }
     }
 }
 

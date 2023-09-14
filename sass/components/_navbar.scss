@@ -1,20 +1,18 @@
+@use "../util" as u;
+
 // typography styles are in the globals folder
 
 header {
-    padding: 3rem 2rem;
-    padding-right: 0;
+    margin-left: 2rem;
     align-items: center;
 }
 
 .logo {
-    margin-right: 3rem;
+    margin-right: 4rem;
 }
 
 .line {
-    width: 30%;
-    height: 2px;
-    z-index: 2;
-    background-color: hsla(var(--off-white) / 0.1);
+    display: none;
 }
 
 // --------------
@@ -23,54 +21,112 @@ header {
 
 .main-navbar {
     display: flex;
-    position: absolute;
-    right: 0;
-    height: 5rem; 
-    // el width se puede mejorar para que sea mas responsive
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    width: max(60vw, 1000px);
-    padding: 0 6rem;
-    background-color: hsla(var(--off-white) / 0.05);
-    backdrop-filter: blur(0.5rem);
-    z-index: 1;
+    width: clamp(400px, 55vw, 60vw);
+    padding-left: clamp(1rem, 3rem, 6rem);
+    background-color: hsla(var(--off-white) / 0.1);
+    backdrop-filter: blur(1rem);
 }
 
 .nav__list {
     display: flex;
-    height: 100%;
-    gap: 2rem;
+    gap: 2.5rem;
 }
-// agregar que se cambie de html clickando en cualquier parte del nav__item
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 .nav__item {
-    display: grid;
-    place-items: center;
+    // display: grid;
+    // place-items: center;
     cursor: pointer;
 }
 
-// --------------
-// STATUS STYLES
-// --------------
-
-$underline-thick: 3px;
-
-.nav__item:hover {
-    border-bottom: $underline-thick solid var(--lila);
+.nav__item a{
+    // padding: 2.5rem 0;
+    transform: translateY(0);
 }
 
-.nav__item:hover a{
-    transform: translateY(1.1px);
+
+// NAVIGATION FOR MOBILE
+@include u.media(u.$mobile) {
+
+    .logo {
+        height: 2rem;
+    }
+    
+
+    .main-navbar {
+        position: fixed;
+        inset: 0 0 0 35%;
+    }
+
+    .nav {
+
+        &__list{
+            flex-direction: column;
+        }
+    }
 }
 
-.nav__item:active {
-    border-bottom: $underline-thick solid var(--white);
+
+
+
+
+// NAVIGATION FOR TABLET
+
+@include u.media(u.$tablet) {
+    
+    .main-navbar {
+        position: absolute;
+        right: 0;
+    }
 }
 
-.nav__item.current-page {
-    border-bottom: $underline-thick solid var(--white);
-}
 
-.nav__item.current-page a{
-    transform: translateY(1.1px);
-}
 
+// NAVIGATION FOR DESKTOP
+@include u.media(u.$desktop) {
+    header {
+        margin-top: 4rem;
+        margin-left: 3rem;
+    }
+
+    .line {
+        display: block;
+        width: 40%;
+        height: 0.5px;
+        z-index: 2;
+        background-color: hsla(var(--off-white) / 0.3);
+    }
+
+    .main-navbar {
+        padding: 0 6rem;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+
+        // --------------
+        // STATUS STYLES
+        // --------------
+
+        $indicator-height: 3px;
+
+        .nav__item:hover {
+            border-bottom: $indicator-height solid var(--lila);
+        }
+
+        .nav__item:hover a{
+            transform: translateY(1.1px);
+        }
+
+        .nav__item:active {
+            border-bottom: $indicator-height solid var(--white);
+        }
+
+        .nav__item.current-page {
+            border-bottom: $indicator-height solid var(--white);
+        }
+
+        .nav__item.current-page a{
+            transform: translateY(1.1px);
+        }
+    
+}

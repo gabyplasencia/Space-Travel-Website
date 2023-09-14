@@ -21,6 +21,8 @@ picture {
 
 body {
   line-height: 1.4;
+  min-height: 100vh;
+  overflow-x: hidden;
   color: white;
 }
 
@@ -74,19 +76,17 @@ ul {
 :root {
   --ff-accent-text: "Bellefair", serif;
   --ff-simple-text: "Barlow Condensed", sans-serif;
-  --fs-100: 0.7rem;
-  --fs-200: 0.9rem;
-  --fs-300: 1.2rem;
+  --fs-100: 0.9rem;
+  --fs-200: 1rem;
+  --fs-300: 1.5rem;
   --fs-400: 1.8rem;
-  --fs-500: 3.3rem;
-  --fs-600: 5.7rem;
-  --fs-700: 8rem;
+  --fs-500: 3.4rem;
+  --fs-600: 5.9rem;
+  --fs-700: 8.7rem;
 }
 
 @media (min-width: 760px) {
   :root {
-    --fs-100: 0.9rem;
-    --fs-200: 1rem;
     --fs-300: 1.8rem;
     --fs-400: 2rem;
     --fs-500: 3.8rem;
@@ -94,10 +94,8 @@ ul {
     --fs-700: 9.4rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   :root {
-    --fs-100: 0.9rem;
-    --fs-200: 1rem;
     --fs-300: 1.8rem;
     --fs-400: 2rem;
     --fs-500: 3.8rem;
@@ -120,8 +118,6 @@ ul {
 .bg-home {
   background-image: url(../../assets/home/background-home-mobile.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
 }
 @media (min-width: 760px) {
@@ -129,7 +125,7 @@ ul {
     background-image: url(../../assets/home/background-home-tablet.jpg);
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .bg-home {
     background-image: url(../../assets/home/background-home-desktop.jpg);
   }
@@ -138,8 +134,6 @@ ul {
 .bg-destination {
   background-image: url(../../assets/destination/background-destination-mobile.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
 }
 @media (min-width: 760px) {
@@ -147,7 +141,7 @@ ul {
     background-image: url(../../assets/destination/background-destination-tablet.jpg);
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .bg-destination {
     background-image: url(../../assets/destination/background-destination-desktop.jpg);
   }
@@ -156,8 +150,6 @@ ul {
 .bg-crew {
   background-image: url(../../assets/crew/background-crew-mobile.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
 }
 @media (min-width: 760px) {
@@ -165,7 +157,7 @@ ul {
     background-image: url(../../assets/crew/background-crew-tablet.jpg);
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .bg-crew {
     background-image: url(../../assets/crew/background-crew-desktop.jpg);
   }
@@ -174,8 +166,6 @@ ul {
 .bg-transport {
   background-image: url(../../assets/transport/background-technology-mobile.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
 }
 @media (min-width: 760px) {
@@ -183,70 +173,96 @@ ul {
     background-image: url(../../assets/transport/background-technology-tablet.jpg);
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .bg-transport {
     background-image: url(../../assets/transport/background-technology-desktop.jpg);
   }
 }
 
 header {
-  padding: 3rem 2rem;
-  padding-right: 0;
+  margin-left: 2rem;
   align-items: center;
 }
 
 .logo {
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .line {
-  width: 30%;
-  height: 2px;
-  z-index: 2;
-  background-color: hsla(var(--off-white)/0.1);
+  display: none;
 }
 
 .main-navbar {
   display: flex;
-  position: absolute;
-  right: 0;
-  height: 5rem;
-  width: max(60vw, 1000px);
-  padding: 0 6rem;
-  background-color: hsla(var(--off-white)/0.05);
-  -webkit-backdrop-filter: blur(0.5rem);
-          backdrop-filter: blur(0.5rem);
-  z-index: 1;
+  width: clamp(400px, 55vw, 60vw);
+  padding-left: 3rem;
+  background-color: hsla(var(--off-white)/0.1);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
 }
 
 .nav__list {
   display: flex;
-  height: 100%;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav__item {
-  display: grid;
-  place-items: center;
   cursor: pointer;
 }
 
-.nav__item:hover {
-  border-bottom: 3px solid var(--lila);
+.nav__item a {
+  transform: translateY(0);
 }
 
-.nav__item:hover a {
-  transform: translateY(1.1px);
+@media (max-width: 420px) {
+  .logo {
+    height: 2rem;
+  }
+  .main-navbar {
+    position: fixed;
+    inset: 0 0 0 35%;
+  }
+  .nav__list {
+    flex-direction: column;
+  }
 }
-
-.nav__item:active {
-  border-bottom: 3px solid var(--white);
+@media (min-width: 760px) {
+  .main-navbar {
+    position: absolute;
+    right: 0;
+  }
 }
-
-.nav__item.current-page {
-  border-bottom: 3px solid var(--white);
-}
-
-.nav__item.current-page a {
-  transform: translateY(1.1px);
+@media (min-width: 1200px) {
+  header {
+    margin-top: 4rem;
+    margin-left: 3rem;
+  }
+  .line {
+    display: block;
+    width: 40%;
+    height: 0.5px;
+    z-index: 2;
+    background-color: hsla(var(--off-white)/0.3);
+  }
+  .main-navbar {
+    padding: 0 6rem;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+  .nav__item:hover {
+    border-bottom: 3px solid var(--lila);
+  }
+  .nav__item:hover a {
+    transform: translateY(1.1px);
+  }
+  .nav__item:active {
+    border-bottom: 3px solid var(--white);
+  }
+  .nav__item.current-page {
+    border-bottom: 3px solid var(--white);
+  }
+  .nav__item.current-page a {
+    transform: translateY(1.1px);
+  }
 }/*# sourceMappingURL=style.css.map */
