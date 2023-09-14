@@ -1,3 +1,4 @@
+// typography styles are in the globals folder
 
 header {
     padding: 3rem 2rem;
@@ -10,21 +11,26 @@ header {
 }
 
 .line {
-    width: 37%;
+    width: 30%;
     height: 2px;
-    background-color: hsl(0 0% 90% / 0.1);
     z-index: 2;
+    background-color: hsla(var(--off-white) / 0.1);
 }
+
+// --------------
+// GENERAL STYLES NAV
+// --------------
 
 .main-navbar {
     display: flex;
     position: absolute;
     right: 0;
-    height: 5rem;
-    width: max(35vw, 60vw);
+    height: 5rem; 
+    // el width se puede mejorar para que sea mas responsive
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    width: max(60vw, 1000px);
     padding: 0 6rem;
-    background-color: hsl(0 0% 90% / 0.05);
-  /* probar en visual ----- mientrs mas grande el valor mas blurea   */
+    background-color: hsla(var(--off-white) / 0.05);
     backdrop-filter: blur(0.5rem);
     z-index: 1;
 }
@@ -34,12 +40,17 @@ header {
     height: 100%;
     gap: 2rem;
 }
-
+// agregar que se cambie de html clickando en cualquier parte del nav__item
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .nav__item {
     display: grid;
     place-items: center;
     cursor: pointer;
 }
+
+// --------------
+// STATUS STYLES
+// --------------
 
 $underline-thick: 3px;
 
@@ -48,8 +59,7 @@ $underline-thick: 3px;
 }
 
 .nav__item:hover a{
-  /*   tiene que ser la mitad del border */
-    transform: translateY(1px);
+    transform: translateY(1.1px);
 }
 
 .nav__item:active {
@@ -61,6 +71,6 @@ $underline-thick: 3px;
 }
 
 .nav__item.current-page a{
-    transform: translateY(1px);
+    transform: translateY(1.1px);
 }
 

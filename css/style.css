@@ -60,7 +60,7 @@ ul {
   --black: hsl(230, 35%, 7%);
   --lila: hsl(231, 77%, 90%);
   --white: hsl(0, 0%, 100%);
-  --translucid: (0 0% 90%);
+  --off-white: 0 0% 90%;
 }
 
 .grid {
@@ -105,6 +105,18 @@ ul {
     --fs-700: 9.4rem;
   }
 }
+.nav {
+  font-family: var(--ff-simple-text);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--fs-100);
+  color: var(--white);
+}
+.nav__number {
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
 .bg-home {
   background-image: url(../../assets/home/background-home-mobile.jpg);
   background-repeat: no-repeat;
@@ -188,10 +200,10 @@ header {
 }
 
 .line {
-  width: 37%;
+  width: 30%;
   height: 2px;
-  background-color: hsla(0, 0%, 90%, 0.1);
   z-index: 2;
+  background-color: hsla(var(--off-white)/0.1);
 }
 
 .main-navbar {
@@ -199,10 +211,9 @@ header {
   position: absolute;
   right: 0;
   height: 5rem;
-  width: 60vw;
+  width: max(60vw, 1000px);
   padding: 0 6rem;
-  background-color: hsla(0, 0%, 90%, 0.05);
-  /* probar en visual ----- mientrs mas grande el valor mas blurea   */
+  background-color: hsla(var(--off-white)/0.05);
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
   z-index: 1;
@@ -225,8 +236,7 @@ header {
 }
 
 .nav__item:hover a {
-  /*   tiene que ser la mitad del border */
-  transform: translateY(1px);
+  transform: translateY(1.1px);
 }
 
 .nav__item:active {
@@ -238,5 +248,5 @@ header {
 }
 
 .nav__item.current-page a {
-  transform: translateY(1px);
+  transform: translateY(1.1px);
 }/*# sourceMappingURL=style.css.map */

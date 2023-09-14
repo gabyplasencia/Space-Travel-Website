@@ -3,3 +3,11 @@
         @content;
     }
 }
+
+@mixin barllow-title ($font-size, $color) {
+    font-family: var(--ff-simple-text);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: $font-size;
+    color: $color;
+}
