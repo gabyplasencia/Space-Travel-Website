@@ -3,7 +3,7 @@
 // typography styles are in the globals folder
 
 header {
-    margin-left: 2rem;
+    // margin-left: 2rem;
     align-items: center;
 }
 
@@ -15,21 +15,27 @@ header {
     display: none;
 }
 
+.nav-toggle {
+    display: none;
+}
 // --------------
 // GENERAL STYLES NAV
 // --------------
 
 .main-navbar {
+    --_blur: 2rem;
     display: flex;
     width: clamp(400px, 55vw, 60vw);
-    padding-left: clamp(1rem, 3rem, 6rem);
-    background-color: hsla(var(--off-white) / 0.1);
-    backdrop-filter: blur(1rem);
+    padding-left: 2rem;
+    background-color: hsl(var(--off-white) 0.1);
+    backdrop-filter: blur(var(--_blur));
+    z-index: 1;
 }
 
 .nav__list {
+    --_gap: 2rem;
     display: flex;
-    gap: 2.5rem;
+    gap: var(--_gap);
 }
 
 .nav__item {
@@ -49,18 +55,42 @@ header {
 
     .logo {
         height: 2rem;
+        margin: 1.5rem;
     }
     
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        right: 1.5rem;
+        top: 2rem;
+        background: transparent;
+        background-image: url(../../assets/shared/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+
+    .nav-toggle.menu-open {
+        background-image: url(../../assets/shared/icon-close.svg);
+    }
 
     .main-navbar {
         position: fixed;
         inset: 0 0 0 35%;
+        transform: translateX(100%);
+    }
+
+    .main-navbar.menu-open {
+        transform: translateX(0);
     }
 
     .nav {
 
         &__list{
             flex-direction: column;
+            padding-top: 6rem;
         }
     }
 }
@@ -100,7 +130,6 @@ header {
         padding: 0 6rem;
         position: absolute;
         right: 0;
-        z-index: 1;
     }
 
         // --------------

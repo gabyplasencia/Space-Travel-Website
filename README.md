@@ -76,7 +76,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [SplideJS](https://splidejs.com/) - They have an incredible detailed documentation which help me manipulate the carrousel in the crew section.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [SASS](https://sass-lang.com/documentation/at-rules/control/if/) - I needed it to read about the conditionals on SASS and their examples help me to understand better.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

@@ -1,9 +1,12 @@
 @use "../util/" as u;
+
+// **********
 // NAV TYPOGRAPHY
+// **********
 
 .nav {
-    @include u.barllow-title(var(--fs-100), var(--white));
-    
+    @include u.barllow-title(var(--fs-200), var(--white));
+
     &__number {
         margin-right: 0.5rem;
         font-weight: 700;

@@ -15,7 +15,8 @@
 @mixin barllow-title ($font-size, $color) {
     font-family: var(--ff-simple-text);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-weight: 300;
     font-size: $font-size;
     color: $color;
 }
