@@ -3,6 +3,18 @@ const navMenu = document.querySelector(".main-navbar");
 
 navToggle.addEventListener("click", () => {
       
-    navToggle.classList.add("menu-open");
-    navMenu.classList.add("menu-open");
+     openAndClose();
 })
+
+const openAndClose = () => {
+
+    if (navMenu.classList.contains("menu-open")) {
+        navToggle.classList.add("menu-close");
+        navMenu.classList.remove("menu-open");
+        navToggle.classList.remove("menu-open");
+      } else {
+        navToggle.classList.remove("menu-close");
+        navMenu.classList.add("menu-open");
+        navToggle.classList.add("menu-open");
+      }
+}

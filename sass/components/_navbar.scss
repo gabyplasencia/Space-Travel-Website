@@ -58,6 +58,24 @@ header {
         margin: 1.5rem;
     }
     
+    .nav {
+        &__list{
+            flex-direction: column;
+            padding-top: 6rem;
+        }
+    }
+
+    .main-navbar {
+        position: fixed;
+        inset: 0 0 0 30%;
+        transform: translateX(100%);
+        transition: transform 300ms ease-in-out;
+    }
+
+    .main-navbar.menu-open {
+        transform: translateX(0);
+    }
+
     .nav-toggle {
         display: block;
         position: absolute;
@@ -72,25 +90,33 @@ header {
         border: 0;
     }
 
+    .nav-toggle.menu-close {
+        background-image: url(../../assets/shared/icon-hamburger.svg);
+        animation: nav-toggle-close 300ms ease-in-out;
+    }
+
+    @keyframes nav-toggle-close {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
     .nav-toggle.menu-open {
         background-image: url(../../assets/shared/icon-close.svg);
+        animation: nav-toggle-x 300ms ease-in-out;
     }
 
-    .main-navbar {
-        position: fixed;
-        inset: 0 0 0 35%;
-        transform: translateX(100%);
-    }
+    @keyframes nav-toggle-x {
+        0% {
+            transform: scale(0);
+        }
 
-    .main-navbar.menu-open {
-        transform: translateX(0);
-    }
-
-    .nav {
-
-        &__list{
-            flex-direction: column;
-            padding-top: 6rem;
+        100% {
+            transform: scale(1);
         }
     }
 }
