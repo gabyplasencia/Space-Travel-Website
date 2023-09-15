@@ -1,0 +1,35 @@
+@use "../util" as u;
+
+.home__btn {
+    --_height: 13rem;
+    height: var(--_height);
+    aspect-ratio: 1;
+    background-color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 
+        box-shadow 300ms ease,
+        opacity 300ms ease;
+}
+
+@media (hover: hover) {
+    .home__btn:hover {
+        box-shadow: 0 0 1px 4rem hsl(var(--off-white) 0.2);
+    }
+}
+
+.home__btn:active {
+    opacity: 0.9;
+}
+
+@include u.media (u.$tablet) {
+    .home__btn {
+        --_height: 15rem;
+    }
+}
+
+@include u.media (u.$desktop) {
+    .home__btn {
+        --_height: 18rem;
+    }
+}

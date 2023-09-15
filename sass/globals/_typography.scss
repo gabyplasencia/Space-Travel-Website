@@ -15,5 +15,17 @@
     }
 }
 
+// **********
+// HOME TYPOGRAPHY
+// **********
+
+.home__btn {
+    font-family: var(--ff-accent-text);
+    text-transform: uppercase;
+    font-size: var(--fs-400);
+    letter-spacing: 2px;
+    color: var(--black);
+}
+
 
 
