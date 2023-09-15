@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body,
@@ -216,7 +217,7 @@ ul {
   }
 }
 .home__btn:active {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 @media (min-width: 421px) {
