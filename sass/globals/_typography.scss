@@ -19,13 +19,26 @@
 // HOME TYPOGRAPHY
 // **********
 
-.home__btn {
-    font-family: var(--ff-accent-text);
-    text-transform: uppercase;
-    font-size: var(--fs-400);
-    letter-spacing: 2px;
-    color: var(--black);
+.home {
+
+    &__title {
+        @include u.barllow-title(var(--fs-300), var(--lila));
+    }
+
+    &__title--big {
+        @include u.accent-text(var(--fs-700), var(--white));
+    }
+
+    &__info {
+        @include u.regular-text();
+    }
+
+    &__btn {
+        @include u.accent-text(var(--fs-400), var(--black), 2px);
+    }
 }
+
+
 
 
 
