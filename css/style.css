@@ -115,7 +115,7 @@ ul {
   font-size: var(--fs-200);
   color: var(--white);
 }
-.nav__number {
+.nav__item--number {
   margin-right: 0.5rem;
   font-weight: 700;
 }
@@ -192,12 +192,12 @@ ul {
   }
 }
 
-header {
+header .flex--row {
   align-items: center;
 }
 
 .logo {
-  margin-right: 4rem;
+  height: 3rem;
 }
 
 .line {
@@ -211,7 +211,6 @@ header {
 .main-navbar {
   --_blur: 2rem;
   display: flex;
-  width: clamp(400px, 55vw, 60vw);
   padding-left: 2rem;
   background-color: hsl(var(--off-white) 0.1);
   -webkit-backdrop-filter: blur(var(--_blur));
@@ -294,8 +293,26 @@ header {
     margin-left: 2rem;
   }
   .main-navbar {
-    position: absolute;
-    right: 0;
+    margin-left: auto;
+    padding-left: 3rem;
+    padding-right: 5rem;
+  }
+  .nav__item {
+    display: grid;
+    place-items: center;
+    --_indicator-height: 3px;
+  }
+  .nav__item a {
+    padding: 2.5rem 0;
+  }
+  .nav__item.current-page {
+    border-bottom: var(--_indicator-height) solid var(--white);
+  }
+  .nav__item.current-page a {
+    transform: translateY(1.1px);
+  }
+  .nav__item--number {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -303,31 +320,32 @@ header {
     margin-top: 4rem;
     margin-left: 3rem;
   }
+  .logo {
+    margin-right: 4rem;
+  }
   .line {
     display: block;
-    width: 40%;
-    height: 0.5px;
+    width: 40vw;
+    height: 1.5px;
     z-index: 2;
-    background-color: hsla(var(--off-white) 0.3);
+    background-color: hsla(var(--off-white) 0.15);
   }
   .main-navbar {
     padding: 0 6rem;
     position: absolute;
     right: 0;
+    width: 55vw;
+  }
+  .nav__item--number {
+    display: inline;
   }
   .nav__item:hover {
-    border-bottom: 3px solid var(--lila);
+    border-bottom: var(--_indicator-height) solid var(--lila);
   }
   .nav__item:hover a {
     transform: translateY(1.1px);
   }
   .nav__item:active {
-    border-bottom: 3px solid var(--white);
-  }
-  .nav__item.current-page {
-    border-bottom: 3px solid var(--white);
-  }
-  .nav__item.current-page a {
-    transform: translateY(1.1px);
+    border-bottom: var(--_indicator-height) solid var(--white);
   }
 }/*# sourceMappingURL=style.css.map */

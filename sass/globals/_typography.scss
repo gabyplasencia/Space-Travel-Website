@@ -7,11 +7,12 @@
 .nav {
     @include u.barllow-title(var(--fs-200), var(--white));
 
-    &__number {
-        margin-right: 0.5rem;
-        font-weight: 700;
+    &__item {
+        &--number {
+            margin-right: 0.5rem;
+            font-weight: 700;
+        }
     }
-
 }
 
 

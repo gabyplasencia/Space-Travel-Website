@@ -1,5 +1,7 @@
 @use "./sass-variables" as v;
 
+// ------media query------
+
 @mixin media ($width) {
     @if $width != v.$mobile {
         @media (min-width: $width) {
@@ -11,6 +13,15 @@
         }
     }
 }
+
+// ------backgrounds------
+
+@mixin bg ($bg-position: bottom){
+    background-size: cover;
+    background-position: $bg-position center;
+}
+
+// ------titles with Barllow font------
 
 @mixin barllow-title ($font-size, $color) {
     font-family: var(--ff-simple-text);
