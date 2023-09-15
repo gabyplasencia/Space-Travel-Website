@@ -1,16 +1,18 @@
 @use "../util" as u;
 
-@mixin bg {
-    background-repeat: no-repeat;
+@mixin bg ($bg-position: bottom){
+    // background-repeat: no-repeat;
     background-size: cover;
+    background-position: $bg-position center;
 }
 
 .bg-home {
     background-image: url(../../assets/home/background-home-mobile.jpg);
-    @include bg;
+    @include bg();
 
     @include u.media(u.$tablet) {
         background-image: url(../../assets/home/background-home-tablet.jpg);
+        @include bg(center);
     }
 
     @include u.media(u.$desktop) {
@@ -20,10 +22,11 @@
 
 .bg-destination {
     background-image: url(../../assets/destination/background-destination-mobile.jpg);
-    @include bg;
+    @include bg();
 
     @include u.media(u.$tablet) {
         background-image: url(../../assets/destination/background-destination-tablet.jpg);
+        @include bg(center);
     }
 
     @include u.media(u.$desktop) {
@@ -33,10 +36,11 @@
 
 .bg-crew {
     background-image: url(../../assets/crew/background-crew-mobile.jpg);
-    @include bg;
+    @include bg();
 
     @include u.media(u.$tablet) {
         background-image: url(../../assets/crew/background-crew-tablet.jpg);
+        @include bg(center);
     }
 
     @include u.media(u.$desktop) {
@@ -46,10 +50,11 @@
 
 .bg-transport {
     background-image: url(../../assets/transport/background-technology-mobile.jpg);
-    @include bg;
+    @include bg();
 
     @include u.media(u.$tablet) {
         background-image: url(../../assets/transport/background-technology-tablet.jpg);
+        @include bg(center);
     }
 
     @include u.media(u.$desktop) {

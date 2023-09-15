@@ -20,7 +20,7 @@ picture {
 }
 
 body {
-  line-height: 1.4;
+  line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
   color: white;
@@ -89,7 +89,7 @@ ul {
   --fs-700: 8.7rem;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 421px) {
   :root {
     --fs-300: 1.8rem;
     --fs-400: 2rem;
@@ -122,12 +122,14 @@ ul {
 
 .bg-home {
   background-image: url(../../assets/home/background-home-mobile.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom center;
 }
-@media (min-width: 760px) {
+@media (min-width: 421px) {
   .bg-home {
     background-image: url(../../assets/home/background-home-tablet.jpg);
+    background-size: cover;
+    background-position: center center;
   }
 }
 @media (min-width: 1200px) {
@@ -138,12 +140,14 @@ ul {
 
 .bg-destination {
   background-image: url(../../assets/destination/background-destination-mobile.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom center;
 }
-@media (min-width: 760px) {
+@media (min-width: 421px) {
   .bg-destination {
     background-image: url(../../assets/destination/background-destination-tablet.jpg);
+    background-size: cover;
+    background-position: center center;
   }
 }
 @media (min-width: 1200px) {
@@ -154,12 +158,14 @@ ul {
 
 .bg-crew {
   background-image: url(../../assets/crew/background-crew-mobile.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom center;
 }
-@media (min-width: 760px) {
+@media (min-width: 421px) {
   .bg-crew {
     background-image: url(../../assets/crew/background-crew-tablet.jpg);
+    background-size: cover;
+    background-position: center center;
   }
 }
 @media (min-width: 1200px) {
@@ -170,12 +176,14 @@ ul {
 
 .bg-transport {
   background-image: url(../../assets/transport/background-technology-mobile.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom center;
 }
-@media (min-width: 760px) {
+@media (min-width: 421px) {
   .bg-transport {
     background-image: url(../../assets/transport/background-technology-tablet.jpg);
+    background-size: cover;
+    background-position: center center;
   }
 }
 @media (min-width: 1200px) {
@@ -281,7 +289,10 @@ header {
     }
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 421px) {
+  header {
+    margin-left: 2rem;
+  }
   .main-navbar {
     position: absolute;
     right: 0;
@@ -297,7 +308,7 @@ header {
     width: 40%;
     height: 0.5px;
     z-index: 2;
-    background-color: hsla(var(--off-white)/0.3);
+    background-color: hsla(var(--off-white) 0.3);
   }
   .main-navbar {
     padding: 0 6rem;
