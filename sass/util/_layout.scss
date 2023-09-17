@@ -4,6 +4,7 @@
 .container {
     width: 85%;
     margin-inline: auto;
+    max-width: 1100px;
 
     @include m.media (v.$tablet) {
         width: 65%;
@@ -11,7 +12,6 @@
     }
 
     @include m.media (v.$desktop) {
-        // change !!!!!!!!!!!!!!!!!!!!!!!
         width: 85%;
     }
 }

@@ -73,6 +73,7 @@ ul {
 .container {
   width: 85%;
   margin-inline: auto;
+  max-width: 1100px;
 }
 @media (min-width: 421px) {
   .container {
@@ -80,7 +81,7 @@ ul {
     margin-top: 1rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .container {
     width: 85%;
   }
@@ -90,7 +91,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .grid {
     grid-template-columns: 1.5fr 1fr;
   }
@@ -123,7 +124,7 @@ ul {
     --fs-700: 9.4rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   :root {
     --fs-200: 1.3rem;
     --fs-300: 1.8rem;
@@ -140,13 +141,22 @@ ul {
   font-size: var(--fs-200);
   color: var(--lila);
 }
+@media (min-width: 1050px) {
+  .text-info {
+    font-family: var(--ff-simple-text-2);
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: var(--fs-100);
+    color: var(--lila);
+  }
+}
 
 .nav {
   font-family: var(--ff-simple-text);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 300;
-  font-size: var(--fs-200);
+  font-size: var(--fs-100);
   color: var(--white);
 }
 .nav__item--number {
@@ -157,7 +167,7 @@ ul {
 .home__title {
   font-family: var(--ff-simple-text);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 300;
   font-size: var(--fs-300);
   color: var(--lila);
@@ -181,7 +191,7 @@ ul {
     font-family: var(--ff-accent-text);
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
     color: var(--black);
   }
 }
@@ -198,7 +208,7 @@ ul {
     background-position: center center;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .bg-home {
     background-image: url(../../assets/home/background-home-desktop.jpg);
   }
@@ -216,7 +226,7 @@ ul {
     background-position: center center;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .bg-destination {
     background-image: url(../../assets/destination/background-destination-desktop.jpg);
   }
@@ -234,7 +244,7 @@ ul {
     background-position: center center;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .bg-crew {
     background-image: url(../../assets/crew/background-crew-desktop.jpg);
   }
@@ -252,7 +262,7 @@ ul {
     background-position: center center;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .bg-transport {
     background-image: url(../../assets/transport/background-technology-desktop.jpg);
   }
@@ -263,6 +273,19 @@ ul {
   align-content: space-around;
   align-items: end;
   text-align: center;
+}
+@media (min-width: 1050px) {
+  .grid--home {
+    text-align: left;
+    justify-content: space-between;
+    grid-template-columns: 0.5fr 1fr;
+  }
+}
+
+@media (min-width: 1050px) {
+  .home__wrapper-btn {
+    text-align: right;
+  }
 }
 
 .home__btn {
@@ -286,12 +309,7 @@ ul {
 
 @media (min-width: 421px) {
   .home__btn {
-    --_height: 18rem;
-  }
-}
-@media (min-width: 1200px) {
-  .home__btn {
-    --_height: 20rem;
+    --_height: 15rem;
   }
 }
 header .flex--row {
@@ -417,7 +435,7 @@ header .flex--row {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   header {
     margin-top: 4rem;
     margin-left: 3rem;

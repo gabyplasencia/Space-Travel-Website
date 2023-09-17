@@ -9,4 +9,16 @@
     align-content: space-around;
     align-items: end;
     text-align: center;
+
+    @include u.media (u.$desktop) {
+        text-align: left;
+        justify-content: space-between;
+        grid-template-columns: 0.5fr 1fr;
+    }
+}
+
+.home__wrapper-btn {
+    @include u.media (u.$desktop) {
+        text-align: right;
+    }
 }

@@ -6,6 +6,10 @@
 
 .text-info {
     @include u.regular-text(var(--fs-200));
+
+      @include u.media (u.$desktop) {
+        @include u.regular-text(var(--fs-100));
+      }
 }
 
 // **********
@@ -13,7 +17,7 @@
 // **********
 
 .nav {
-    @include u.barllow-title(var(--fs-200), var(--white));
+    @include u.barllow-title(var(--fs-100), var(--white));
 
     &__item {
         &--number {
@@ -41,7 +45,7 @@
         @include u.accent-text(var(--fs-300), var(--black), 2px);
 
            @include u.media (u.$tablet) {
-             @include u.accent-text(var(--fs-500), var(--black), 2px);
+             @include u.accent-text(var(--fs-400), var(--black), 2px);
            }
     }
 }
