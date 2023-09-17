@@ -70,10 +70,6 @@ ul {
   --off-white: 0, 0%, 90%,;
 }
 
-.grid {
-  display: grid;
-}
-
 .flex--row {
   display: flex;
 }

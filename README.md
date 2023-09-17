@@ -2,8 +2,6 @@
 
 ![Design preview for the Space tourism website coding challenge](./assets/preview.jpg)
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -31,16 +29,30 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Space Travel Website](https://spacetravel-gabyplasencia.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
+
 - CSS
+ - Grid
+ - Flexbox
+ - Custom variables
+ - Media Queries
+
 - SASS
+ - Partials
+ - Mixins
+ - Sass variables
+ - Conditionals
+
 - Javascript
+ - No framework
+ - SplideJS library
+
 - Mobile-first workflow
 
 ### What I learned
@@ -49,47 +61,42 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```sass
+@mixin media ($width) {
+    @if $width != v.$mobile {
+        @media (min-width: $width) {
+            @content;
+        }
+    } @else {
+        @media (max-width: $width) {
+            @content;
+        }
+    }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+1. Learn accesibility.
 
 ### Useful resources
-
+- [General CSS Info](https://developer.mozilla.org/en-US/) - This is one of my regular go to for CSS info. Their way for define CSS elements is simple and concise with easy to understand examples.
 - [SplideJS](https://splidejs.com/) - They have an incredible detailed documentation which help me manipulate the carrousel in the crew section.
 - [SASS](https://sass-lang.com/documentation/at-rules/control/if/) - I needed it to read about the conditionals on SASS and their examples help me to understand better.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Linkedin - [Gabriela Plasencia](https://www.linkedin.com/in/gabriela-plasencia-gomez/)
+- GitHub - [@gabyplasencia](https://github.com/gabyplasencia)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+1. Kevin Powell
+2. DevWebSimplefy
+
+
