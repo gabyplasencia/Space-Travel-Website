@@ -42,17 +42,14 @@ Users should be able to:
  - Flexbox
  - Custom variables
  - Media Queries
-
 - SASS:
  - Partials
  - Mixins
  - Sass variables
  - Conditionals
-
 - Javascript:
  - No framework
  - SplideJS library
-
 - Mobile-first workflow
 
 ### What I learned
