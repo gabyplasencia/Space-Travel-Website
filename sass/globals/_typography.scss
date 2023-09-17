@@ -1,6 +1,14 @@
 @use "../util/" as u;
 
 // **********
+// GENERAL TYPOGRAPHY
+// **********
+
+.text-info {
+    @include u.regular-text();
+}
+
+// **********
 // NAV TYPOGRAPHY
 // **********
 
@@ -27,10 +35,6 @@
 
     &__title--big {
         @include u.accent-text(var(--fs-700), var(--white));
-    }
-
-    &__info {
-        @include u.regular-text();
     }
 
     &__btn {
