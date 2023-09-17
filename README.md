@@ -37,18 +37,18 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS:
- - Grid
- - Flexbox
- - Custom variables
- - Media Queries
+  - Grid
+  - Flexbox
+  - Custom variables
+  - Media Queries
 - SASS:
- - Partials
- - Mixins
- - Sass variables
- - Conditionals
+  - Partials
+  - Mixins
+  - Sass variables
+  - Conditionals
 - Javascript:
- - No framework
- - SplideJS library
+  - No framework
+  - SplideJS library
 - Mobile-first workflow
 
 ### What I learned
