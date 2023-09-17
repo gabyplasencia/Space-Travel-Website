@@ -1,11 +1,11 @@
-@use "../util/" as u;
+@use "../util" as u;
 
 // **********
 // GENERAL TYPOGRAPHY
 // **********
 
 .text-info {
-    @include u.regular-text();
+    @include u.regular-text(var(--fs-200));
 }
 
 // **********
@@ -38,7 +38,11 @@
     }
 
     &__btn {
-        @include u.accent-text(var(--fs-400), var(--black), 2px);
+        @include u.accent-text(var(--fs-300), var(--black), 2px);
+
+           @include u.media (u.$tablet) {
+             @include u.accent-text(var(--fs-500), var(--black), 2px);
+           }
     }
 }
 

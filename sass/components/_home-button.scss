@@ -24,12 +24,12 @@
 
 @include u.media (u.$tablet) {
     .home__btn {
-        --_height: 15rem;
+        --_height: 18rem;
     }
 }
 
 @include u.media (u.$desktop) {
     .home__btn {
-        --_height: 18rem;
+        --_height: 20rem;
     }
 }

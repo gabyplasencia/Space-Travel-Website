@@ -76,7 +76,8 @@ ul {
 }
 @media (min-width: 421px) {
   .container {
-    width: 85%;
+    width: 65%;
+    margin-top: 1rem;
   }
 }
 @media (min-width: 1200px) {
@@ -114,13 +115,17 @@ ul {
 
 @media (min-width: 421px) {
   :root {
-    --fs-500: 3.8rem;
+    --fs-200: 1.3rem;
+    --fs-300: 1.5rem;
+    --fs-400: 2rem;
+    --fs-500: 2.5rem;
     --fs-600: 6.3rem;
-    --fs-700: 9rem;
+    --fs-700: 9.4rem;
   }
 }
 @media (min-width: 1200px) {
   :root {
+    --fs-200: 1.3rem;
     --fs-300: 1.8rem;
     --fs-400: 2rem;
     --fs-500: 3.8rem;
@@ -132,7 +137,7 @@ ul {
   font-family: var(--ff-simple-text-2);
   line-height: 1.7;
   font-weight: 300;
-  font-size: var(--fs--200);
+  font-size: var(--fs-200);
   color: var(--lila);
 }
 
@@ -168,8 +173,17 @@ ul {
   font-family: var(--ff-accent-text);
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: var(--fs-400);
+  font-size: var(--fs-300);
   color: var(--black);
+}
+@media (min-width: 421px) {
+  .home__btn {
+    font-family: var(--ff-accent-text);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: var(--fs-500);
+    color: var(--black);
+  }
 }
 
 .bg-home {
@@ -245,7 +259,7 @@ ul {
 }
 
 .grid--home {
-  height: min(85vh, 950px);
+  height: min(85vh, 1050px);
   align-content: space-around;
   align-items: end;
   text-align: center;
@@ -272,12 +286,12 @@ ul {
 
 @media (min-width: 421px) {
   .home__btn {
-    --_height: 15rem;
+    --_height: 18rem;
   }
 }
 @media (min-width: 1200px) {
   .home__btn {
-    --_height: 18rem;
+    --_height: 20rem;
   }
 }
 header .flex--row {

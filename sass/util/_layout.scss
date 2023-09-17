@@ -6,8 +6,8 @@
     margin-inline: auto;
 
     @include m.media (v.$tablet) {
-        // change !!!!!!!!!!!!!!!!!!!!!
-        width: 85%;
+        width: 65%;
+        margin-top: 1rem;
     }
 
     @include m.media (v.$desktop) {
