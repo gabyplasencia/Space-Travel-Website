@@ -36,17 +36,17 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS
+- CSS:
  - Grid
  - Flexbox
  - Custom variables
  - Media Queries
-- SASS
+- SASS:
  - Partials
  - Mixins
  - Sass variables
  - Conditionals
-- Javascript
+- Javascript:
  - No framework
  - SplideJS library
 - Mobile-first workflow
@@ -57,7 +57,7 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-```sass
+```scss
 @mixin media ($width) {
     @if $width != v.$mobile {
         @media (min-width: $width) {
