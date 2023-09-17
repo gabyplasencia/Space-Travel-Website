@@ -1,0 +1,12 @@
+@use "../util" as u;
+
+// **********
+// HOME LAYOUT
+// **********
+
+.grid--home {
+    height: min(85vh, 950px);
+    align-content: space-around;
+    align-items: end;
+    text-align: center;
+}

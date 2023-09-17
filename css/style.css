@@ -70,6 +70,31 @@ ul {
   --off-white: 0, 0%, 90%,;
 }
 
+.container {
+  width: 85%;
+  margin-inline: auto;
+}
+@media (min-width: 421px) {
+  .container {
+    width: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
 .flex--row {
   display: flex;
 }
@@ -80,11 +105,11 @@ ul {
   --ff-simple-text-2: "Barlow", sans-serif;
   --fs-100: 0.9rem;
   --fs-200: 1rem;
-  --fs-300: 1.5rem;
-  --fs-400: 1.8rem;
+  --fs-300: 1.2rem;
+  --fs-400: 1.5rem;
   --fs-500: 3.4rem;
   --fs-600: 5.9rem;
-  --fs-700: 8.7rem;
+  --fs-700: 6rem;
 }
 
 @media (min-width: 421px) {
@@ -219,8 +244,15 @@ ul {
   }
 }
 
+.grid--home {
+  height: min(85vh, 950px);
+  align-content: space-around;
+  align-items: end;
+  text-align: center;
+}
+
 .home__btn {
-  --_height: 13rem;
+  --_height: 11rem;
   height: var(--_height);
   aspect-ratio: 1;
   background-color: var(--white);

@@ -1,7 +1,7 @@
 @use "../util" as u;
 
 .home__btn {
-    --_height: 13rem;
+    --_height: 11rem;
     height: var(--_height);
     aspect-ratio: 1;
     background-color: var(--white);

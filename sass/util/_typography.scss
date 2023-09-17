@@ -13,11 +13,11 @@
 
     --fs-100: 0.9rem;
     --fs-200: 1rem;
-    --fs-300: 1.5rem;
-    --fs-400: 1.8rem;
+    --fs-300: 1.2rem;
+    --fs-400: 1.5rem;
     --fs-500: 3.4rem;
     --fs-600: 5.9rem;
-    --fs-700: 8.7rem;
+    --fs-700: 6rem;
 }
 
 @include m.media(v.$tablet) {

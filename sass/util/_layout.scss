@@ -1,6 +1,29 @@
-// .grid {
-//     display: grid;
-// }
+@use "../util/mixins" as m;
+@use "../util/sass-variables" as v;
+
+.container {
+    width: 85%;
+    margin-inline: auto;
+
+    @include m.media (v.$tablet) {
+        // change !!!!!!!!!!!!!!!!!!!!!
+        width: 85%;
+    }
+
+    @include m.media (v.$desktop) {
+        // change !!!!!!!!!!!!!!!!!!!!!!!
+        width: 85%;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include m.media (v.$desktop) {
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
 
 .flex--row {
     display: flex;
