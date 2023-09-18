@@ -73,7 +73,7 @@ ul {
 .container {
   width: 85%;
   margin-inline: auto;
-  max-width: 1100px;
+  max-width: 1200px;
 }
 @media (min-width: 421px) {
   .container {
@@ -286,6 +286,14 @@ ul {
   .home__wrapper-btn {
     text-align: right;
   }
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.tab-active[data-tab-content] {
+  display: block;
 }
 
 .home__btn {

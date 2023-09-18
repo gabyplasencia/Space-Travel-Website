@@ -32,40 +32,20 @@
   </header>
 
   <main class="destination">
-    <div class="container">
         <h2 class="section-title"><span class="section-title--number">01</span>Pick your destination</h2>
-        <div class="destination__grid"></div>
-
-        <ul class="destination__tabs-list">
-            <li class="active destination__tab" data-tab-target="#moon">Moon</li>
+        <div class="container grid grid--destination">
+        
+        <div class="destination-wrapper">
+          <ul class="destination__tabs-list">
+            <li class="tab-active destination__tab" data-tab-target="#moon">Moon</li>
             <li class="tab destination__tab" data-tab-target="#mars">Mars</li>
             <li class="tab destination__tab" data-tab-target="#europa">Europa</li>
             <li class="tab destination__tab" data-tab-target="#titan">Titan</li>
         </ul>
-        
-        <div class="tab-content destination__img">
-
-            <div id="moon" data-tab-content class="active">
-              <img src="../../assets/destination/image-europa.png" alt="a picture of the moon">
-            </div>
-
-            <div id="mars" data-tab-content>
-              <img src="../../assets/destination/image-mars.png" alt="a picture of mars">
-            </div>
-
-            <div id="europa" data-tab-content>
-              <img src="../../assets/destination/image-europa.png" alt="a picture of the planet europa">
-            </div>
-
-            <div id="titan" data-tab-content>
-              <img src="../../assets/destination/image-titan.png" alt="a picture of the planet titan">
-            </div>
-
-        </div>
 
           <div class="tab-content destination__info">
 
-            <section class="active" id="moon" data-tab-content>
+            <section class="tab-active" id="moon" data-tab-content>
                 <h3 class="planet-title">Moon</h3>
                 <p class="text-info planet-info">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
                     regain perspective and come back refreshed. While you’re there, take in some history 
@@ -138,7 +118,27 @@
                 </div>
               </section>
           </div>
+        </div>
+          
+          <div class="tab-content destination__img">
 
+            <div  class="tab-active moon"data-tab-content>
+              <img src="../../assets/destination/image-moon.png" alt="a picture of the moon">
+            </div>
+
+            <div class="mars" data-tab-content>
+              <img src="../../assets/destination/image-mars.png" alt="a picture of mars">
+            </div>
+
+            <div class="europa" data-tab-content>
+              <img src="../../assets/destination/image-europa.png" alt="a picture of the planet europa">
+            </div>
+
+            <div class="titan" data-tab-content>
+              <img src="../../assets/destination/image-titan.png" alt="a picture of the planet titan">
+            </div>
+
+        </div>
     </div>
   </main>
 

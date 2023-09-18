@@ -22,3 +22,15 @@
         text-align: right;
     }
 }
+
+// **********
+// DESTINATION LAYOUT
+// **********
+
+[data-tab-content] {
+    display: none;
+  }
+  
+  .tab-active[data-tab-content] {
+    display: block;
+  }
