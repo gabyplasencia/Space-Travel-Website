@@ -23,10 +23,10 @@
 
 // ------titles with Barllow Condensed font------
 
-@mixin barllow-title ($font-size, $color) {
+@mixin barllow-title ($font-size, $color, $letter-spacing: 2px) {
     font-family: var(--ff-simple-text);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: $letter-spacing;
     font-weight: 300;
     font-size: $font-size;
     color: $color;
@@ -47,6 +47,7 @@
 @mixin accent-text ($font-size, $color: var(--white), $letter-spacing: 3px) {
     font-family: var(--ff-accent-text);
     text-transform: uppercase;
+    font-weight: 300;
     letter-spacing: $letter-spacing;
     font-size: $font-size;
     color: $color;

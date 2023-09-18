@@ -152,6 +152,20 @@ ul {
   }
 }
 
+.section-title {
+  font-family: var(--ff-simple-text);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: var(--fs-200);
+  color: var(--white);
+}
+.section-title--number {
+  margin-right: 1rem;
+  font-weight: 700;
+  color: hsl(var(--off-white) 0.8);
+}
+
 .nav {
   font-family: var(--ff-simple-text);
   text-transform: uppercase;
@@ -176,6 +190,7 @@ ul {
 .home__title--big {
   font-family: var(--ff-accent-text);
   text-transform: uppercase;
+  font-weight: 300;
   letter-spacing: 3px;
   font-size: var(--fs-700);
   color: var(--white);
@@ -183,6 +198,7 @@ ul {
 .home__btn {
   font-family: var(--ff-accent-text);
   text-transform: uppercase;
+  font-weight: 300;
   letter-spacing: 2px;
   font-size: var(--fs-300);
   color: var(--black);
@@ -191,10 +207,28 @@ ul {
   .home__btn {
     font-family: var(--ff-accent-text);
     text-transform: uppercase;
+    font-weight: 300;
     letter-spacing: 2px;
     font-size: var(--fs-400);
     color: var(--black);
   }
+}
+
+.destination__tabs-list {
+  font-family: var(--ff-simple-text);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: var(--fs-100);
+  color: var(--lila);
+}
+.destination__planet-title {
+  font-family: var(--ff-accent-text);
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: var(--fs-600);
+  color: var(--white);
 }
 
 .bg-home {
@@ -288,15 +322,6 @@ ul {
   .home__wrapper-btn {
     text-align: right;
   }
-}
-
-.destination__tabs-list {
-  font-family: var(--ff-simple-text);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 300;
-  font-size: var(--fs-100);
-  color: var(--lila);
 }
 
 .home__btn {

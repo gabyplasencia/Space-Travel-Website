@@ -12,6 +12,17 @@
       }
 }
 
+.section-title {
+
+    @include u.barllow-title(var(--fs-200), var(--white), 3px);
+     
+    &--number {
+        margin-right: 1rem;
+        font-weight: 700;
+        color: hsl(var(--off-white) 0.8);
+    }
+}
+
 // **********
 // NAV TYPOGRAPHY
 // **********
@@ -54,6 +65,13 @@
 // DESTINATION TYPOGRAPHY
 // **********
 
+.destination {
 
+    &__tabs-list {
+        @include u.barllow-title(var(--fs-100), var(--lila));
+    }
 
-
+    &__planet-title {
+        @include u.accent-text(var(--fs-600));
+    }
+}
