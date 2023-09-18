@@ -24,7 +24,6 @@ body {
   line-height: 1.4;
   max-height: 100vh;
   overflow-x: hidden;
-  overflow-y: hidden;
   color: white;
 }
 
@@ -163,7 +162,7 @@ ul {
 .section-title--number {
   margin-right: 1rem;
   font-weight: 700;
-  color: hsl(var(--off-white) 0.8);
+  color: hsl(var(--off-white) 0.6);
 }
 
 .nav {
@@ -228,6 +227,23 @@ ul {
   font-weight: 300;
   letter-spacing: 3px;
   font-size: var(--fs-600);
+  color: var(--white);
+}
+
+.travel-info__title {
+  font-family: var(--ff-simple-text);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: var(--fs-100);
+  color: var(--lila);
+}
+.travel-info__text {
+  font-family: var(--ff-accent-text);
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: var(--fs-200);
   color: var(--white);
 }
 
@@ -300,6 +316,12 @@ ul {
 @media (min-width: 1050px) {
   .bg-transport {
     background-image: url(../../assets/transport/background-technology-desktop.jpg);
+  }
+}
+
+@media (min-width: 1050px) {
+  body {
+    overflow-y: hidden;
   }
 }
 

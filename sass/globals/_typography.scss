@@ -13,13 +13,12 @@
 }
 
 .section-title {
-
     @include u.barllow-title(var(--fs-200), var(--white), 3px);
      
     &--number {
         margin-right: 1rem;
         font-weight: 700;
-        color: hsl(var(--off-white) 0.8);
+        color: hsl(var(--off-white) 0.6);
     }
 }
 
@@ -73,5 +72,15 @@
 
     &__planet-title {
         @include u.accent-text(var(--fs-600));
+    }
+}
+
+.travel-info {
+    &__title {
+        @include u.barllow-title(var(--fs-100), var(--lila));
+    }
+
+    &__text {
+        @include u.accent-text(var(--fs-200), var(--white), 2px);
     }
 }

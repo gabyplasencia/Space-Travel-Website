@@ -1,5 +1,11 @@
 @use "../util" as u;
 
+body {
+    @include u.media (u.$desktop) {
+        overflow-y: hidden;
+    }
+}
+
 // **********
 // HOME LAYOUT
 // **********
