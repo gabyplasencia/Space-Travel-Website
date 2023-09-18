@@ -12,7 +12,7 @@ tabs.forEach(tab => {
       tab.classList.remove('tab-active');
     })
     tab.classList.add('tab-active'); //display the text content
-    target.classList.add('tab-active'); //select the correct tab
+    target.classList.add('tab-active'); //select the current tab
 
     const id = target.id;
     

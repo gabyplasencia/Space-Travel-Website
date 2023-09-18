@@ -22,8 +22,9 @@ picture {
 
 body {
   line-height: 1.4;
-  min-height: 100vh;
+  max-height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
   color: white;
 }
 
@@ -73,7 +74,7 @@ ul {
 .container {
   width: 85%;
   margin-inline: auto;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 @media (min-width: 421px) {
   .container {
@@ -276,6 +277,7 @@ ul {
 }
 @media (min-width: 1050px) {
   .grid--home {
+    margin-block: 0;
     text-align: left;
     justify-content: space-between;
     grid-template-columns: 0.5fr 1fr;
@@ -288,12 +290,13 @@ ul {
   }
 }
 
-[data-tab-content] {
-  display: none;
-}
-
-.tab-active[data-tab-content] {
-  display: block;
+.destination__tabs-list {
+  font-family: var(--ff-simple-text);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: var(--fs-100);
+  color: var(--lila);
 }
 
 .home__btn {
@@ -431,7 +434,7 @@ header .flex--row {
     --_indicator-height: 3px;
   }
   .nav__item a {
-    padding: 2.5rem 0;
+    padding-block: 2.5rem;
   }
   .nav__item.current-page {
     border-bottom: var(--_indicator-height) solid var(--white);
@@ -476,4 +479,31 @@ header .flex--row {
   .nav__item:active {
     border-bottom: var(--_indicator-height) solid var(--white);
   }
+}
+[data-tab-content] {
+  display: none;
+}
+
+.tab-active[data-tab-content] {
+  display: block;
+}
+
+.destination__tabs-list {
+  --_gap: 1.5rem;
+  gap: var(--_gap);
+}
+
+.destination__tab {
+  padding-block: 0.5rem;
+  cursor: pointer;
+}
+
+.destination__tab:hover {
+  padding-block: 0.5rem;
+  border-bottom: 3px solid hsl(var(--off-white) 0.8);
+}
+
+.tab-active.destination__tab {
+  color: var(--white);
+  border-bottom: 3px solid var(--white);
 }/*# sourceMappingURL=style.css.map */
