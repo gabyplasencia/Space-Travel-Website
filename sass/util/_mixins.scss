@@ -37,6 +37,7 @@
 @mixin regular-text ($font-size, $color: var(--lila)) {
     font-family: var(--ff-simple-text-2);
     line-height: 1.7;
+    letter-spacing: 0.8px;
     font-weight: 300;
     font-size: $font-size;
     color: $color;

@@ -87,6 +87,12 @@ ul {
   }
 }
 
+@media (min-width: 421px) {
+  .container.grid--destination {
+    width: 75%;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -109,8 +115,8 @@ ul {
   --fs-200: 1rem;
   --fs-300: 1.2rem;
   --fs-400: 1.5rem;
-  --fs-500: 3.4rem;
-  --fs-600: 5.9rem;
+  --fs-500: 2rem;
+  --fs-600: 4rem;
   --fs-700: 6rem;
 }
 
@@ -137,6 +143,7 @@ ul {
 .text-info {
   font-family: var(--ff-simple-text-2);
   line-height: 1.7;
+  letter-spacing: 0.8px;
   font-weight: 300;
   font-size: var(--fs-200);
   color: var(--lila);
@@ -145,6 +152,7 @@ ul {
   .text-info {
     font-family: var(--ff-simple-text-2);
     line-height: 1.7;
+    letter-spacing: 0.8px;
     font-weight: 300;
     font-size: var(--fs-100);
     color: var(--lila);
@@ -243,7 +251,7 @@ ul {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
-  font-size: var(--fs-200);
+  font-size: var(--fs-500);
   color: var(--white);
 }
 
@@ -325,6 +333,14 @@ ul {
   }
 }
 
+@media (min-width: 421px) {
+  main .section-title {
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+}
+
 .grid--home {
   height: min(85vh, 1050px);
   align-content: space-around;
@@ -346,6 +362,51 @@ ul {
   }
 }
 
+.grid--destination {
+  justify-items: center;
+}
+.grid--destination .destination-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination {
+  text-align: center;
+}
+.destination__img img {
+  --_height: 12rem;
+  height: var(--_height);
+  margin-block: 2rem;
+}
+.destination__hr {
+  margin-block: 2rem;
+  background-color: hsl(var(--off-white) 0.7);
+  height: 0.5px;
+}
+
+.travel-info__title {
+  margin-bottom: 0.5rem;
+}
+.travel-info__text {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 421px) {
+  .destination__img img {
+    --_height: 18rem;
+  }
+  .travel-info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .travel-info__title {
+    margin-bottom: 0.5rem;
+  }
+  .travel-info__text {
+    margin-bottom: 2rem;
+  }
+}
 .home__btn {
   --_height: 11rem;
   height: var(--_height);

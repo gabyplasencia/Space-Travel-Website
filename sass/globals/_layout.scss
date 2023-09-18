@@ -6,6 +6,15 @@ body {
     }
 }
 
+main .section-title {
+    @include u.media (u.$tablet){
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+}
+
 // **********
 // HOME LAYOUT
 // **********
@@ -34,3 +43,66 @@ body {
 // DESTINATION LAYOUT
 // **********
 
+.grid--destination {
+    justify-items: center;
+
+    .destination-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.destination {
+    text-align: center;
+
+
+    &__img {
+        img{
+            --_height: 12rem;
+            height: var(--_height);
+            margin-block: 2rem;
+        }
+    }
+
+    &__hr {
+        margin-block: 2rem;
+        background-color: hsl(var(--off-white) 0.7);
+        height: 0.5px;
+    }
+}
+
+.travel-info {
+
+    &__title {
+       margin-bottom: 0.5rem;
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+    }
+}
+
+@include u.media (u.$tablet) {
+
+    .destination {
+        &__img {
+            img{
+                --_height: 18rem;
+            }
+        }
+    }
+
+    .travel-info {
+        display: flex;
+        justify-content: space-around;
+    
+        &__title {
+           margin-bottom: 0.5rem;
+        }
+    
+        &__text {
+            margin-bottom: 2rem;
+        }
+    }
+}

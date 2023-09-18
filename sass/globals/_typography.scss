@@ -81,6 +81,6 @@
     }
 
     &__text {
-        @include u.accent-text(var(--fs-200), var(--white), 2px);
+        @include u.accent-text(var(--fs-500), var(--white), 2px);
     }
 }
