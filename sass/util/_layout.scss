@@ -16,12 +16,6 @@
     }
 }
 
-.container.grid--destination {
-    @include m.media (v.$tablet) {
-        width: 75%;
-    }
-}
-
 .grid {
     display: grid;
     grid-template-columns: 1fr;
