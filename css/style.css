@@ -73,7 +73,7 @@ ul {
 .container {
   width: 85%;
   margin-inline: auto;
-  max-width: 1100px;
+  max-width: 1200px;
 }
 @media (min-width: 421px) {
   .container {
@@ -84,6 +84,17 @@ ul {
 @media (min-width: 1050px) {
   .container {
     width: 85%;
+  }
+}
+
+@media (min-width: 421px) {
+  .container--section {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 1050px) {
+  .container--section {
+    margin-top: 10vh;
   }
 }
 
@@ -424,11 +435,15 @@ ul {
     gap: 3rem;
     width: 85%;
     margin-inline: auto;
-    max-width: 1100px;
+    max-width: 1200px;
     text-align: left;
   }
   .destination__img img {
     --_height: 28rem;
+    margin-block: 0;
+  }
+  .destination__planet-text {
+    max-width: 55ch;
   }
   .grid--destination {
     max-width: 100%;
@@ -438,6 +453,9 @@ ul {
   }
   .grid--destination .destination-wrapper {
     align-items: normal;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: unset;
   }
   .travel-info {
     justify-content: space-between;

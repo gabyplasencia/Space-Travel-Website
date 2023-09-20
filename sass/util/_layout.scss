@@ -4,7 +4,7 @@
 .container {
     width: 85%;
     margin-inline: auto;
-    max-width: 1100px;
+    max-width: 1200px;
 
     @include m.media (v.$tablet) {
         width: 65%;
@@ -13,6 +13,16 @@
 
     @include m.media (v.$desktop) {
         width: 85%;
+    }
+}
+
+.container--section {
+    @include m.media (v.$tablet) {
+        margin-top: 2.5rem;
+    }
+
+    @include m.media (v.$desktop) {
+        margin-top: 10vh;
     }
 }
 

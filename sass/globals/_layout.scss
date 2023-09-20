@@ -133,13 +133,21 @@ main .section-title {
 
         width: 85%;
         margin-inline: auto;
-        max-width: 1100px;
+        max-width: 1200px;
         text-align: left;
 
         &__img {
             img{
                 --_height: 28rem;
+                margin-block: 0;
             }
+        }
+    }
+
+    .destination__planet {
+
+        &-text {
+            max-width: 55ch;
         }
     }
 
@@ -151,6 +159,10 @@ main .section-title {
 
         .destination-wrapper{
             align-items: normal;
+            align-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: unset;
+
         }
     }
 
