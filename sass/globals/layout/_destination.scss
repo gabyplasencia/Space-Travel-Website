@@ -1,51 +1,4 @@
-@use "../util" as u;
-
-body {
-    @include u.media (u.$desktop) {
-        overflow-y: hidden;
-    }
-}
-
-main .section-title {
-    @include u.media (u.$tablet){
-        text-align: left;
-        margin-left: 2rem;
-        margin-top: 1rem;
-    }
-
-    @include u.media (u.$desktop) {
-        margin-left: 0;
-    }
-
-}
-
-// **********
-// HOME LAYOUT
-// **********
-
-.grid--home {
-    height: min(85vh, 1050px);
-    align-content: space-around;
-    align-items: end;
-    text-align: center;
-
-    @include u.media (u.$desktop) {
-        margin-block: 0;
-        text-align: left;
-        justify-content: space-between;
-        grid-template-columns: 0.5fr 1fr;
-    }
-}
-
-.home__wrapper-btn {
-    @include u.media (u.$desktop) {
-        text-align: right;
-    }
-}
-
-// **********
-// DESTINATION LAYOUT
-// **********
+@use "../../util" as u;
 
 .grid--destination {
     justify-items: center;
@@ -180,7 +133,3 @@ main .section-title {
         width: 100%;
     }
 }
-
-// **********
-// CREW LAYOUT
-// **********

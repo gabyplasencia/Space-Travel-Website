@@ -1,0 +1,23 @@
+@use "../../util" as u;
+
+body {
+    @include u.media (u.$desktop) {
+        overflow-y: hidden;
+    }
+}
+
+main .section-title {
+    margin-bottom: 2rem;
+
+    @include u.media (u.$tablet){
+        margin: 0;
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    @include u.media (u.$desktop) {
+        margin-left: 0;
+    }
+
+}

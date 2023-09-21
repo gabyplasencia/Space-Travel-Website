@@ -92,3 +92,17 @@
         }
     }
 }
+
+// **********
+// CREW TYPOGRAPHY
+// **********
+
+.crew {
+    &__position {
+        @include u.accent-text (var(--fs-400), hsl(var(--off-white) 0.7), -1px);
+    }
+
+    &__name {
+        @include u.accent-text (var(--fs-500), var(--white), -1px);
+    }
+}
