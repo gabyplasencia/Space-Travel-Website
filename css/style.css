@@ -527,7 +527,7 @@ main .section-title {
 .crew .splide__pagination {
   margin: 0;
   padding: 0;
-  gap: 1rem;
+  gap: 1.1rem;
   position: absolute;
   top: 16rem;
   left: 50%;
@@ -537,7 +537,7 @@ main .section-title {
   background-color: hsl(var(--off-white) 0.4);
   border: none;
   border-radius: 50%;
-  height: 0.6rem;
+  height: 0.8rem;
   aspect-ratio: 1;
 }
 .crew .splide__pagination__page.is-active {
@@ -555,16 +555,9 @@ main .section-title {
 @media (min-width: 421px) {
   .crew {
     position: relative;
-    height: 95vh;
-  }
-  .splide {
-    position: absolute;
-    bottom: 0px;
-    top: 0px;
-    left: 50%;
-    translate: -50%;
   }
   .crew__grid {
+    height: 90vh;
     justify-content: space-between;
   }
   .crew__grid-item--photo {
@@ -577,6 +570,15 @@ main .section-title {
   .crew__grid-item--intro {
     margin-top: 0;
     max-width: 80ch;
+  }
+  .crew .splide {
+    position: absolute;
+    top: 8vh;
+    left: 50%;
+    translate: -50%;
+  }
+  .crew .splide__pagination {
+    top: 23vh;
   }
 }
 .home__btn {

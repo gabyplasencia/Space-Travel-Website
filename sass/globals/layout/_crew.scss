@@ -43,7 +43,7 @@
     .splide__pagination {
         margin: 0;
         padding: 0;
-        gap: 1rem;
+        gap: 1.1rem;
     
         position: absolute;
         top: 16rem;
@@ -55,7 +55,7 @@
         background-color: hsl(var(--off-white) 0.4);
         border: none;
         border-radius: 50%;
-        height: 0.6rem;
+        height: 0.8rem;
         aspect-ratio: 1;
     }
       
@@ -83,33 +83,35 @@
 @include u.media (u.$tablet) {
     .crew{
         position: relative;
-        height: 95vh;
-    }
 
-    .splide {
-        position: absolute;
-        bottom: 0px;
-        top: 0px;
-        left: 50%;
-        translate: -50%;
-    }
+        &__grid {
+            height: 90vh;
+            justify-content: space-between;
     
-    .crew__grid {
-        // not work set height checking the test
-        justify-content: space-between;
-
-        &-item--photo {
-            grid-row: 2 / 3;
-    
-            img {
-                --_height: 37rem;
-                height: var(--_height);
+            &-item--photo {
+                grid-row: 2 / 3;
+        
+                img {
+                    --_height: 37rem;
+                    height: var(--_height);
+                }
+            }
+        
+            &-item--intro {
+                margin-top: 0;
+                max-width: 80ch;
             }
         }
-    
-        &-item--intro {
-            margin-top: 0;
-            max-width: 80ch;
+
+        .splide {
+            position: absolute;
+            top: 8vh;
+            left: 50%;
+            translate: -50%;
+        }
+        
+        .splide__pagination {
+            top: 23vh;
         }
     }
 }
