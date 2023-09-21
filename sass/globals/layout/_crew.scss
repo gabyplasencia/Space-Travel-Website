@@ -37,8 +37,9 @@
 // CAROUSEL BUTTON STYLES
 // ------------
 
-// this classes are added by the splidejs library (link splide-core which only include the basics)
+
 .crew {
+    // this classes are added by the splidejs library (link splide-core which only include the basics)
     .splide__pagination {
         margin: 0;
         padding: 0;
@@ -80,32 +81,35 @@
 // **********
 
 @include u.media (u.$tablet) {
-    body {
+    .crew{
         position: relative;
+        height: 95vh;
     }
 
-    // .splide {
-    //     position: absolute;
-    //     bottom: -100vh;
-    //     left: 50%;
-    //     translate: -50%;
-    // }
+    .splide {
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        left: 50%;
+        translate: -50%;
+    }
     
     .crew__grid {
-        gap: 4.5rem;
+        // not work set height checking the test
+        justify-content: space-between;
 
         &-item--photo {
             grid-row: 2 / 3;
     
             img {
-                --_height: 33rem;
+                --_height: 37rem;
                 height: var(--_height);
             }
         }
     
         &-item--intro {
             margin-top: 0;
-            max-width: 70ch;
+            max-width: 80ch;
         }
     }
 }

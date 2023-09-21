@@ -1,7 +1,7 @@
 @use "../../util" as u;
 
 body {
-    @include u.media (u.$desktop) {
+    @include u.media (u.$tablet) {
         overflow-y: hidden;
     }
 }
