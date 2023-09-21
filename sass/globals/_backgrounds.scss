@@ -1,12 +1,19 @@
 @use "../util" as u;
 
+body {
+    background-size: cover;
+    background-position: center center;
+
+    @include u.media (u.$tablet) {
+        overflow-y: hidden;
+    }
+}
+
 .bg-home {
     background-image: url(../../assets/home/background-home-mobile.jpg);
-    @include u.bg();
 
     @include u.media(u.$tablet) {
         background-image: url(../../assets/home/background-home-tablet.jpg);
-        @include u.bg(center);
     }
 
     @include u.media(u.$desktop) {
@@ -14,13 +21,12 @@
     }
 }
 
-.bg-destination {
+body.bg-destination {
     background-image: url(../../assets/destination/background-destination-mobile.jpg);
-    @include u.bg();
+    height: auto;
 
     @include u.media(u.$tablet) {
         background-image: url(../../assets/destination/background-destination-tablet.jpg);
-        @include u.bg(center);
     }
 
     @include u.media(u.$desktop) {
@@ -30,11 +36,9 @@
 
 .bg-crew {
     background-image: url(../../assets/crew/background-crew-mobile.jpg);
-    @include u.bg();
 
     @include u.media(u.$tablet) {
         background-image: url(../../assets/crew/background-crew-tablet.jpg);
-        @include u.bg(center);
     }
 
     @include u.media(u.$desktop) {
@@ -44,11 +48,9 @@
 
 .bg-transport {
     background-image: url(../../assets/transport/background-technology-mobile.jpg);
-    @include u.bg();
 
     @include u.media(u.$tablet) {
         background-image: url(../../assets/transport/background-technology-tablet.jpg);
-        @include u.bg(center);
     }
 
     @include u.media(u.$desktop) {
