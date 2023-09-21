@@ -22,7 +22,10 @@
     }
 
     @include m.media (v.$desktop) {
-        margin-top: 10vh;
+        margin-top: 5vh;
+        width: 85%;
+        margin-inline: auto;
+        max-width: 1200px;
     }
 }
 

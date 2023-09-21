@@ -94,7 +94,10 @@ ul {
 }
 @media (min-width: 1050px) {
   .container--section {
-    margin-top: 10vh;
+    margin-top: 5vh;
+    width: 85%;
+    margin-inline: auto;
+    max-width: 1200px;
   }
 }
 
@@ -355,6 +358,11 @@ ul {
     margin-top: 1rem;
   }
 }
+@media (min-width: 1050px) {
+  main .section-title {
+    margin-left: 0;
+  }
+}
 
 .grid--home {
   height: min(85vh, 1050px);
@@ -433,9 +441,6 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 85%;
-    margin-inline: auto;
-    max-width: 1200px;
     text-align: left;
   }
   .destination__img img {

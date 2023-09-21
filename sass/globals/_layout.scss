@@ -13,6 +13,10 @@ main .section-title {
         margin-top: 1rem;
     }
 
+    @include u.media (u.$desktop) {
+        margin-left: 0;
+    }
+
 }
 
 // **********
@@ -129,10 +133,6 @@ main .section-title {
         display: flex;
         flex-direction: column;
         gap: 3rem;
-
-        width: 85%;
-        margin-inline: auto;
-        max-width: 1200px;
         text-align: left;
 
         &__img {
