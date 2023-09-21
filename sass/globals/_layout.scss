@@ -83,7 +83,6 @@ main .section-title {
 }
 
 
-
 // **********
 // DESTINATION MEDIA TABLET
 // **********
@@ -144,11 +143,8 @@ main .section-title {
         }
     }
 
-    .destination__planet {
-
-        &-text {
+    .destination__planet-text {
             max-width: 55ch;
-        }
     }
 
     .grid--destination {
@@ -184,3 +180,7 @@ main .section-title {
         width: 100%;
     }
 }
+
+// **********
+// CREW LAYOUT
+// **********

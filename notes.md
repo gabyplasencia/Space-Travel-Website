@@ -6,3 +6,4 @@
 
 5. The underline indicator on main-nav should be a little bit thicker
 6. Try to fix the layout jump in destination (different number of lines in text)
+7. The home button semantic is wrong FIX
