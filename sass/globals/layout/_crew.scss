@@ -93,7 +93,6 @@
         
                 img {
                     --_height: 37rem;
-                    height: var(--_height);
                 }
             }
         
@@ -122,5 +121,38 @@
 // **********
 
 @include u.media (u.$desktop) {
+    .crew{
+        height: auto;
+        text-align: left;
 
+        &__grid {
+            grid-template-columns: 1fr 1fr;
+
+            &-item--intro {
+                justify-self: left;
+                margin-top: 15vh;
+            }
+
+            &-item--photo {
+                grid-row: auto;
+        
+                img {
+                    --_height: 47rem;
+                }
+            }
+        }
+    
+        &__info {
+            max-width: 55ch;
+        }
+
+        .splide {
+            max-width: 1200px;
+            position: absolute;
+            top: auto;
+            bottom: -90vh;
+            left: 50%;
+            translate: -50%;
+        }
+    }
 }
