@@ -127,18 +127,21 @@
         text-align: left;
 
         &__grid {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.3fr 1fr;
 
             &-item--intro {
                 justify-self: left;
-                margin-top: 15vh;
+                margin-top: 5vh;
+                max-width: none;
             }
 
             &-item--photo {
                 grid-row: auto;
         
                 img {
-                    --_height: 47rem;
+                    --_height: 80vh;
+                    max-height: 55rem;
+                    object-fit: contain;
                 }
             }
         }
@@ -148,18 +151,18 @@
         }
 
         .splide {
-            position: relative;
+            width: 100%;
             max-width: 1200px;
             position: absolute;
             top: auto;
-            bottom: -90vh;
+            bottom: -100vh;
             left: 50%;
             translate: -50%;
         }
 
         .splide__pagination {
             position: absolute;
-            top: 30rem;
+            top: 45vh;
             left: 3.5rem;
           }
     }

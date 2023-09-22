@@ -149,7 +149,7 @@ header .flex--row{
     }
     
     .nav__item a{
-        padding-block: 2.5rem;
+        padding-block: 2rem;
     }
 
     .nav__item.current-page {
@@ -183,7 +183,7 @@ header .flex--row{
 
     .line {
         display: block;
-        width: 40vw;
+        width: 37vw;
         height: 1.5px;
         z-index: 2;
         background-color: hsla(var(--off-white) 0.15);
@@ -213,6 +213,10 @@ header .flex--row{
         }
 
         .nav__item:active {
+            border-bottom: var(--_indicator-height) solid var(--white);
+        }
+
+        .nav__item.current-page:hover {
             border-bottom: var(--_indicator-height) solid var(--white);
         }
     
