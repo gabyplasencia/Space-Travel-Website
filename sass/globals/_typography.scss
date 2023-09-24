@@ -106,3 +106,19 @@
         @include u.accent-text (var(--fs-500), var(--white), -1px);
     }
 }
+
+// **********
+// TRANSPORT TYPOGRAPHY
+// **********
+
+.transport {
+
+    &__intro {
+       &__subtitle {
+        @include u.barllow-title(var(--fs-100), var(--lila));
+       }
+       &__title {
+        @include u.accent-text (var(--fs-500), var(--white), -1px);
+       }
+    }
+}
