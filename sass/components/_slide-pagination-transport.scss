@@ -1,2 +1,40 @@
 @use "../util" as u;
 
+.transport {
+    // this classes are added by the splidejs library (link splide-core which only include the basics)
+    .splide__pagination {
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+    
+        position: absolute;
+        top: 16rem;
+        left: 50%;
+        translate: -50%;
+      }
+      
+    .splide__pagination__page {
+        color: var(--white);
+        background-color: transparent;
+        border: 1px solid hsl(var(--off-white) 0.3);
+        border-radius: 50%;
+        height: 2.5rem;
+        aspect-ratio: 1;
+        cursor: pointer;
+    }
+      
+    .splide__pagination__page.is-active {
+        background-color: var(--white);
+        color: var(--black);
+        transition: background-color 300ms;
+    }
+
+    .splide__pagination__page.is-active:hover {
+        background-color: var(--white);
+    }
+      
+    .splide__pagination__page:hover {
+        border-color: var(--white);
+        transition: border-color 300ms;
+    }
+}
