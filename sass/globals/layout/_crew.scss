@@ -33,50 +33,6 @@
     }
 }
 
-// ------------
-// CAROUSEL BUTTON STYLES
-// ------------
-
-
-.crew {
-    // this classes are added by the splidejs library (link splide-core which only include the basics)
-    .splide__pagination {
-        margin: 0;
-        padding: 0;
-        gap: 1.1rem;
-    
-        position: absolute;
-        top: 16rem;
-        left: 50%;
-        translate: -50%;
-      }
-      
-    .splide__pagination__page {
-        background-color: hsl(var(--off-white) 0.3);
-        border: none;
-        border-radius: 50%;
-        height: 0.8rem;
-        aspect-ratio: 1;
-        cursor: pointer;
-    }
-      
-    .splide__pagination__page.is-active {
-        background-color: var(--white);
-        transition: background-color 300ms;
-    }
-
-    .splide__pagination__page.is-active:hover {
-        background-color: var(--white);
-    }
-      
-    .splide__pagination__page:hover {
-        background-color: hsl(var(--off-white) 0.6);
-        transition: background-color 300ms;
-    }
-}
-
-
-
 // **********
 // CREW MEDIA TABLET
 // **********
@@ -108,10 +64,6 @@
             top: 8vh;
             left: 50%;
             translate: -50%;
-        }
-        
-        .splide__pagination {
-            top: 23vh;
         }
     }
 }
@@ -159,11 +111,5 @@
             left: 50%;
             translate: -50%;
         }
-
-        .splide__pagination {
-            position: absolute;
-            top: 45vh;
-            left: 3.5rem;
-          }
     }
 }

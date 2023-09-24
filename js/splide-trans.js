@@ -4,6 +4,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
       arrows: false,
       rewind: true,
       type: 'fade',
+      paginationDirection: 'ttb',
     } );
     
     //This allows to add a number to each dot
