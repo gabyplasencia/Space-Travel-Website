@@ -2,6 +2,8 @@
 
 .grid--destination {
     justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
 
     .destination-wrapper{
         display: flex;
@@ -101,6 +103,8 @@
     }
 
     .grid--destination {
+        grid-template-columns: 1.5fr 1fr;
+
         max-width: 100%;
         margin: 0;
         justify-content: space-between;
@@ -115,6 +119,10 @@
         }
     }
 
+    .container.grid--destination {
+        width: 100%;
+    }
+
     .travel-info {
         justify-content: space-between;
 
@@ -125,11 +133,5 @@
          &__text {
              margin-bottom: 0;
          }
-    }
-}
-
-.container.grid--destination {
-    @include u.media (u.$desktop) {
-        width: 100%;
     }
 }

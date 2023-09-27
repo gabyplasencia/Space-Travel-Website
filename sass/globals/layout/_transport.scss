@@ -1,1 +1,11 @@
 @use "../../util" as u;
+
+.transport {
+    text-align: center;
+
+    
+}
+
+.transport__grid {
+  display: grid;
+}
