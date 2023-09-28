@@ -1,6 +1,8 @@
 @use "../../util" as u;
 
 .grid--home {
+    display: grid;
+    grid-template-columns: 1fr;
     height: min(85vh, 1050px);
     align-content: space-around;
     align-items: end;
@@ -19,3 +21,4 @@
         text-align: right;
     }
 }
+
