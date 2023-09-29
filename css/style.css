@@ -304,6 +304,9 @@ ul {
   font-size: var(--fs-500);
   color: var(--white);
 }
+.transport .splide__pagination {
+  font-size: var(--fs-200);
+}
 
 body {
   background-size: cover;
@@ -603,6 +606,12 @@ main .section-title {
 }
 .transport {
   text-align: center;
+  /*
+    these values of padding-inline are the division of the rest
+    of what is left of the width set i the utility class container
+    and then that value I divide it by 2, this way this page keep the same
+    aspect as the rest of the htmls 
+  */
 }
 .transport__photo {
   padding-inline: 0;
@@ -613,12 +622,18 @@ main .section-title {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 421px) {
+  .transport__photo img {
+    height: 22rem;
+  }
+}
 .transport__intro {
   padding-inline: 5%;
 }
 @media (min-width: 421px) {
   .transport__intro {
     padding-inline: 17.5%;
+    margin-top: 1.6rem;
   }
 }
 @media (min-width: 1050px) {
@@ -635,6 +650,12 @@ main .section-title {
   grid-template-columns: 1fr;
   gap: 15vh;
   margin-bottom: 5vh;
+}
+@media (min-width: 421px) {
+  .transport__grid {
+    margin-top: 3rem;
+    gap: 10rem;
+  }
 }
 
 .home__btn {
@@ -919,4 +940,13 @@ header .flex--row {
 .transport .splide__pagination__page:hover {
   border-color: var(--white);
   transition: border-color 300ms;
+}
+
+@media (min-width: 421px) {
+  .transport .splide__pagination {
+    top: 29rem;
+  }
+  .transport .splide__pagination__page {
+    height: 3.75rem;
+  }
 }/*# sourceMappingURL=style.css.map */

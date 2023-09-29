@@ -10,18 +10,26 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
+
+            @include u.media (u.$tablet) {
+                height: 22rem;
+            }
+
            }
         }
         
-        //these values of padding-inline are the division of the rest
-        //of what is left of the width set i the utility class container
-        //and then that value I divide it by 2, this way this page keep the same
-        //aspect as the rest of the htmls
+        /*
+          these values of padding-inline are the division of the rest
+          of what is left of the width set i the utility class container
+          and then that value I divide it by 2, this way this page keep the same
+          aspect as the rest of the htmls 
+        */
         &__intro {
             padding-inline: 5%;
 
             @include u.media (u.$tablet) {
                 padding-inline: 17.5%;
+                margin-top: 1.6rem;
             }
 
             @include u.media (u.$desktop) {
@@ -39,4 +47,9 @@
     grid-template-columns: 1fr;
     gap: 15vh;
     margin-bottom: 5vh;
+
+    @include u.media (u.$tablet) {
+        margin-top: 3rem;
+        gap: 10rem;
+    }
 }

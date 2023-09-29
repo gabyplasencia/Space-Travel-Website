@@ -32,9 +32,26 @@
     .splide__pagination__page.is-active:hover {
         background-color: var(--white);
     }
-      
+
     .splide__pagination__page:hover {
         border-color: var(--white);
         transition: border-color 300ms;
+    }
+}
+
+// **********
+// CREW MEDIA TABLET
+// **********
+
+@include u.media (u.$tablet) {
+    .transport {
+        
+        .splide__pagination {
+            top: 29rem;
+        }
+
+        .splide__pagination__page {
+            height: 3.75rem;
+        }
     }
 }
