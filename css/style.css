@@ -606,9 +606,6 @@ main .section-title {
 }
 .transport__photo {
   padding-inline: 0;
-  width: 100vw;
-  max-width: 100vw;
-  margin-left: calc(-50vw + 50%);
 }
 .transport__photo img {
   height: 100%;
