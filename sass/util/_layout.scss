@@ -16,6 +16,14 @@
     }
 }
 
+.transport__container {
+    max-width: 1200px;
+
+    @include m.media (v.$tablet) {
+        margin-top: 1rem;
+    }
+}
+
 .container--section {
     @include m.media (v.$tablet) {
         margin-top: 2.5rem;

@@ -4,6 +4,7 @@
     text-align: center;
     
     &__photo {
+            padding-inline: 0;
             width: 100vw;
             max-width: 100vw;
             margin-left: calc(-50vw + 50%);
@@ -14,15 +15,26 @@
            }
         }
     
-}
+        &__intro {
+            padding-inline: 5%;
 
-.container > .transport__photo{
-    width: 100%;
-    margin: 0;
+            @include u.media (u.$tablet) {
+                padding-inline: 17.5%;
+            }
+
+            @include u.media (u.$desktop) {
+                padding-inline: 7.5%;
+            }
+        }
+
+        &__intro__info {
+            margin-top: 1rem;
+        }
 }
 
 .transport__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15vh;
+    margin-bottom: 5vh;
 }
