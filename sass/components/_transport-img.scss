@@ -1,0 +1,34 @@
+@use "../util" as u;
+
+.transport {
+        
+    &__photo {
+        padding-inline: 0;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+            @include u.media (u.$tablet) {
+                height: 22rem;
+            }
+       }
+    }
+}
+
+.transport__photo--portrait {
+    display: none;
+}
+
+@include u.media (u.$desktop) {
+
+    .transport__photo--portrait {
+        display: block;
+    }
+
+    .transport__photo--landscape {
+        display: none;
+    }
+}
+

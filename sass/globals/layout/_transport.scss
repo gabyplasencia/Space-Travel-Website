@@ -2,21 +2,6 @@
 
 .transport {
     text-align: center;
-    
-    &__photo {
-            padding-inline: 0;
-
-           img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-
-            @include u.media (u.$tablet) {
-                height: 22rem;
-            }
-
-           }
-        }
         
         /*
           these values of padding-inline are the division of the rest
@@ -51,5 +36,21 @@
     @include u.media (u.$tablet) {
         margin-top: 3rem;
         gap: 10rem;
+    }
+}
+
+// **********
+// TRANSPORT MEDIA DESKTOP
+// **********
+
+@include u.media (u.$desktop) {
+
+    .transport__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10vh;
+    }
+
+    .transport {
+        text-align: left;
     }
 }

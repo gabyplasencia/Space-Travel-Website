@@ -613,20 +613,6 @@ main .section-title {
     aspect as the rest of the htmls 
   */
 }
-.transport__photo {
-  padding-inline: 0;
-}
-.transport__photo img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (min-width: 421px) {
-  .transport__photo img {
-    height: 22rem;
-  }
-}
 .transport__intro {
   padding-inline: 5%;
 }
@@ -658,6 +644,15 @@ main .section-title {
   }
 }
 
+@media (min-width: 1050px) {
+  .transport__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10vh;
+  }
+  .transport {
+    text-align: left;
+  }
+}
 .home__btn {
   --_height: 11rem;
   height: var(--_height);
@@ -948,5 +943,32 @@ header .flex--row {
   }
   .transport .splide__pagination__page {
     height: 3.75rem;
+  }
+}
+.transport__photo {
+  padding-inline: 0;
+}
+.transport__photo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 421px) {
+  .transport__photo img {
+    height: 22rem;
+  }
+}
+
+.transport__photo--portrait {
+  display: none;
+}
+
+@media (min-width: 1050px) {
+  .transport__photo--portrait {
+    display: block;
+  }
+  .transport__photo--landscape {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
