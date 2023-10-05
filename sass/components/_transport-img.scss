@@ -30,5 +30,17 @@
     .transport__photo--landscape {
         display: none;
     }
+
+    .transport {
+
+        &__photo {
+           justify-self: end;
+
+            img {
+                height: 60vh;
+                object-fit: contain;
+           }
+        }
+    }
 }
 

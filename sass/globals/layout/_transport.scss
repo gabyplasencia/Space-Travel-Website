@@ -18,7 +18,7 @@
             }
 
             @include u.media (u.$desktop) {
-                padding-inline: 7.5%;
+                padding-inline: 7.5%; //!!!!!!!!!!!!!!
             }
         }
 
@@ -40,6 +40,17 @@
 }
 
 // **********
+// TRANSPORT MEDIA TABLET
+// **********
+
+@include u.media (u.$tablet) {
+    
+    .transport {
+    margin-top: 2.5rem;
+    }
+}
+
+// **********
 // TRANSPORT MEDIA DESKTOP
 // **********
 
@@ -48,9 +59,18 @@
     .transport__grid {
         grid-template-columns: 1fr 1fr;
         gap: 10vh;
+        // margin-right: -50vw;
     }
 
     .transport {
         text-align: left;
+
+        &__photo {
+            grid-column: 2 / 3;
+        }
+
+        &__intro {
+            grid-row: 1 / 2;
+        }
     }
 }
