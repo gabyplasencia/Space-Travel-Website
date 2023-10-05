@@ -21,6 +21,10 @@
     display: none;
 }
 
+// **********
+// TRANSPORT IMG DESKTOP
+// **********
+
 @include u.media (u.$desktop) {
 
     .transport__photo--portrait {

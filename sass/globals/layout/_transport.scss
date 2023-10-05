@@ -18,7 +18,7 @@
             }
 
             @include u.media (u.$desktop) {
-                padding-inline: 7.5%; //!!!!!!!!!!!!!!
+                padding-inline: 7.5%;
             }
         }
 
@@ -44,7 +44,7 @@
 // **********
 
 @include u.media (u.$tablet) {
-    
+
     .transport {
     margin-top: 2.5rem;
     }
@@ -57,9 +57,10 @@
 @include u.media (u.$desktop) {
 
     .transport__grid {
-        grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        width: 90%;
+        grid-template-columns: 0.5fr 0.6fr;
         gap: 10vh;
-        // margin-right: -50vw;
     }
 
     .transport {
@@ -71,6 +72,10 @@
 
         &__intro {
             grid-row: 1 / 2;
+        }
+
+        .splide {
+            display: flex;
         }
     }
 }

@@ -40,7 +40,7 @@
 }
 
 // **********
-// CREW MEDIA TABLET
+// TRANSPORT PAGINATION TABLET
 // **********
 
 @include u.media (u.$tablet) {
@@ -52,6 +52,23 @@
 
         .splide__pagination__page {
             height: 3.75rem;
+        }
+    }
+}
+
+// **********
+// TRANSPORT PAGINATION DESKTOP
+// **********
+
+@include u.media (u.$desktop) {
+    .transport {
+        
+        .splide__pagination {
+            height: fit-content;
+            position: initial;
+            flex-direction: column;
+            translate: 0;
+            margin-top: 10vh;
         }
     }
 }
