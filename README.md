@@ -15,8 +15,6 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -53,10 +51,11 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+With the different layouts I could depeen into the use of display grid, find different solutions to each problem I encountered.
 
-To see how you can add code snippets, see below:
+Also I started to use js libraries, in this case was splidejs, it gave me a huge range of costumization for the slides and the pagination.
 
+And last, this project gave me the opportunity to use coditionals in SASS and improve my use of mixins for save lines of code.
 ```scss
 @mixin media ($width) {
     @if $width != v.$mobile {
@@ -73,26 +72,24 @@ To see how you can add code snippets, see below:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This is what I feel I need to keep improving or learn:
 
-1. Learn accesibility.
+1. Learn more about accessibility.
+2. Improve the consistency of class naming.
+3. Planning more before star the HTML structure.
 
 ### Useful resources
-- [General CSS Info](https://developer.mozilla.org/en-US/) - This is one of my regular go to for CSS info. Their way for define CSS elements is simple and concise with easy to understand examples.
+
+- [General Info](https://developer.mozilla.org/en-US/) - This is one of my regular go to for CSS info. Their way for define CSS elements is simple and concise with easy to understand examples.
 - [SplideJS](https://splidejs.com/) - They have an incredible detailed documentation which help me manipulate the carrousel in the crew section.
 - [SASS](https://sass-lang.com/documentation/at-rules/control/if/) - I needed it to read about the conditionals on SASS and their examples help me to understand better.
+- [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/) - They have great visual examples for layout properties.
+- [Kevin Powell Youtube](https://www.youtube.com/@KevinPowell) - He has an extensive variety of videos explaining or showing different CSS subjects.
 
 ## Author
 
-- Linkedin - [Gabriela Plasencia](https://www.linkedin.com/in/gabriela-plasencia-gomez/)
+- Linkedin - [Gabriela Plasencia](https://www.linkedin.com/in/gabyplasencia/)
 - GitHub - [@gabyplasencia](https://github.com/gabyplasencia)
 
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-1. Kevin Powell
-2. DevWebSimplefy
 
 
